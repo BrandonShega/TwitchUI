@@ -1,0 +1,6 @@
+framework module Pods_TwitchUI {
+  umbrella header "Pods-TwitchUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

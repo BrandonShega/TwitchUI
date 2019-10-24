@@ -1,0 +1,6 @@
+framework module Pods_TwitchUITests {
+  umbrella header "Pods-TwitchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

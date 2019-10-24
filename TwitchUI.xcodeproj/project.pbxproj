@@ -3,10 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D68B288235FE46A0098B6E9 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68B287235FE46A0098B6E9 /* APIRequest.swift */; };
+		3D68B28B236128C60098B6E9 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68B28A236128C60098B6E9 /* UserRequest.swift */; };
+		3D68B28E23612A960098B6E9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68B28D23612A960098B6E9 /* Config.swift */; };
+		3D68B29123612B2C0098B6E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68B29023612B2C0098B6E9 /* User.swift */; };
+		3D68B293236139B20098B6E9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68B292236139B20098B6E9 /* APIResponse.swift */; };
+		3D72E502235BF65900343B65 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72E501235BF65900343B65 /* ContentViewModel.swift */; };
+		3D8C2BD7235D351D00AA5862 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C2BD6235D351D00AA5862 /* TokenStore.swift */; };
+		3D8C2BD9235D38A400AA5862 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C2BD8235D38A400AA5862 /* FollowingView.swift */; };
+		3D8C2BDD235D38C800AA5862 /* FollowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C2BDC235D38C800AA5862 /* FollowingViewModel.swift */; };
+		3D8C2BE0235D411300AA5862 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C2BDF235D411300AA5862 /* Network.swift */; };
+		3D8C2BE2235D41F000AA5862 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C2BE1235D41F000AA5862 /* NetworkRequest.swift */; };
+		3D8C2BE4235D44F700AA5862 /* URLSession+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C2BE3235D44F700AA5862 /* URLSession+Network.swift */; };
 		3D9DE5EB2356ACD100A4339F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DE5EA2356ACD100A4339F /* AppDelegate.swift */; };
 		3D9DE5ED2356ACD100A4339F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DE5EC2356ACD100A4339F /* SceneDelegate.swift */; };
 		3D9DE5EF2356ACD100A4339F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DE5EE2356ACD100A4339F /* ContentView.swift */; };
@@ -15,6 +27,12 @@
 		3D9DE5F72356ACD200A4339F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DE5F52356ACD200A4339F /* LaunchScreen.storyboard */; };
 		3D9DE6022356ACD200A4339F /* TwitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DE6012356ACD200A4339F /* TwitchUITests.swift */; };
 		3D9DE60D2356ACD200A4339F /* TwitchUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DE60C2356ACD200A4339F /* TwitchUIUITests.swift */; };
+		3DB99C2E235E262B0017394D /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB99C2D235E262B0017394D /* NetworkResponse.swift */; };
+		3DB99C33235E2F360017394D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB99C32235E2F360017394D /* Error.swift */; };
+		3DB99C35235E3A7C0017394D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB99C34235E3A7C0017394D /* API.swift */; };
+		7E1CB613520D08D017143044 /* Pods_TwitchUI_TwitchUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038240EDF587152FC924DA08 /* Pods_TwitchUI_TwitchUIUITests.framework */; };
+		F2E0F0AEDB11144A6D3BD5D8 /* Pods_TwitchUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A591A31E1D6ECCA13B64F3 /* Pods_TwitchUI.framework */; };
+		FF0490A2CB027760095A0032 /* Pods_TwitchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D5E99E11B2E460FBF78B49 /* Pods_TwitchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038240EDF587152FC924DA08 /* Pods_TwitchUI_TwitchUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchUI_TwitchUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A591A31E1D6ECCA13B64F3 /* Pods_TwitchUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D68B287235FE46A0098B6E9 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		3D68B28A236128C60098B6E9 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		3D68B28D23612A960098B6E9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		3D68B29023612B2C0098B6E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3D68B292236139B20098B6E9 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		3D72E501235BF65900343B65 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		3D8C2BD6235D351D00AA5862 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		3D8C2BD8235D38A400AA5862 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
+		3D8C2BDC235D38C800AA5862 /* FollowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewModel.swift; sourceTree = "<group>"; };
+		3D8C2BDF235D411300AA5862 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3D8C2BE1235D41F000AA5862 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		3D8C2BE3235D44F700AA5862 /* URLSession+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Network.swift"; sourceTree = "<group>"; };
 		3D9DE5E72356ACD100A4339F /* TwitchUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9DE5EA2356ACD100A4339F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9DE5EC2356ACD100A4339F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +81,16 @@
 		3D9DE6082356ACD200A4339F /* TwitchUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitchUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9DE60C2356ACD200A4339F /* TwitchUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchUIUITests.swift; sourceTree = "<group>"; };
 		3D9DE60E2356ACD200A4339F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB99C2D235E262B0017394D /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		3DB99C32235E2F360017394D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		3DB99C34235E3A7C0017394D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		43D5E99E11B2E460FBF78B49 /* Pods_TwitchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D0842038100EAABECC7889 /* Pods-TwitchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchUITests.release.xcconfig"; path = "Target Support Files/Pods-TwitchUITests/Pods-TwitchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8AE9B28225356983BB64CC43 /* Pods-TwitchUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchUI.release.xcconfig"; path = "Target Support Files/Pods-TwitchUI/Pods-TwitchUI.release.xcconfig"; sourceTree = "<group>"; };
+		B3A5D00A2E234651AC035979 /* Pods-TwitchUI-TwitchUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchUI-TwitchUIUITests.release.xcconfig"; path = "Target Support Files/Pods-TwitchUI-TwitchUIUITests/Pods-TwitchUI-TwitchUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9409B31FF5600CBA797B1DB /* Pods-TwitchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchUITests.debug.xcconfig"; path = "Target Support Files/Pods-TwitchUITests/Pods-TwitchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB9928C7B1496C658A89D335 /* Pods-TwitchUI-TwitchUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchUI-TwitchUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-TwitchUI-TwitchUIUITests/Pods-TwitchUI-TwitchUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF5F5A93CC10364757E85FC8 /* Pods-TwitchUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchUI.debug.xcconfig"; path = "Target Support Files/Pods-TwitchUI/Pods-TwitchUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E0F0AEDB11144A6D3BD5D8 /* Pods_TwitchUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0490A2CB027760095A0032 /* Pods_TwitchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +114,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1CB613520D08D017143044 /* Pods_TwitchUI_TwitchUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D68B289236128B70098B6E9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3D68B28A236128C60098B6E9 /* UserRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3D68B28C23612A860098B6E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D68B28D23612A960098B6E9 /* Config.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		3D68B28F23612B240098B6E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D68B29023612B2C0098B6E9 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D8C2BDE235D410900AA5862 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3D8C2BDF235D411300AA5862 /* Network.swift */,
+				3D8C2BE1235D41F000AA5862 /* NetworkRequest.swift */,
+				3D8C2BE3235D44F700AA5862 /* URLSession+Network.swift */,
+				3DB99C2D235E262B0017394D /* NetworkResponse.swift */,
+				3DB99C34235E3A7C0017394D /* API.swift */,
+				3D68B287235FE46A0098B6E9 /* APIRequest.swift */,
+				3D68B292236139B20098B6E9 /* APIResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		3D9DE5DE2356ACD100A4339F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +166,8 @@
 				3D9DE6002356ACD200A4339F /* TwitchUITests */,
 				3D9DE60B2356ACD200A4339F /* TwitchUIUITests */,
 				3D9DE5E82356ACD100A4339F /* Products */,
+				9EC0E0186085DF4E6F02183F /* Pods */,
+				5E638E0414B048B266F5F0A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +184,11 @@
 		3D9DE5E92356ACD100A4339F /* TwitchUI */ = {
 			isa = PBXGroup;
 			children = (
+				3D68B28F23612B240098B6E9 /* Models */,
+				3D68B28C23612A860098B6E9 /* Support Files */,
+				3D68B289236128B70098B6E9 /* Requests */,
+				3DB99C2F235E2F1A0017394D /* Extensions */,
+				3D8C2BDE235D410900AA5862 /* Networking */,
 				3D9DE5EA2356ACD100A4339F /* AppDelegate.swift */,
 				3D9DE5EC2356ACD100A4339F /* SceneDelegate.swift */,
 				3D9DE5EE2356ACD100A4339F /* ContentView.swift */,
@@ -106,6 +196,10 @@
 				3D9DE5F52356ACD200A4339F /* LaunchScreen.storyboard */,
 				3D9DE5F82356ACD200A4339F /* Info.plist */,
 				3D9DE5F22356ACD200A4339F /* Preview Content */,
+				3D72E501235BF65900343B65 /* ContentViewModel.swift */,
+				3D8C2BD6235D351D00AA5862 /* TokenStore.swift */,
+				3D8C2BD8235D38A400AA5862 /* FollowingView.swift */,
+				3D8C2BDC235D38C800AA5862 /* FollowingViewModel.swift */,
 			);
 			path = TwitchUI;
 			sourceTree = "<group>";
@@ -136,6 +230,37 @@
 			path = TwitchUIUITests;
 			sourceTree = "<group>";
 		};
+		3DB99C2F235E2F1A0017394D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DB99C32235E2F360017394D /* Error.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E638E0414B048B266F5F0A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06A591A31E1D6ECCA13B64F3 /* Pods_TwitchUI.framework */,
+				038240EDF587152FC924DA08 /* Pods_TwitchUI_TwitchUIUITests.framework */,
+				43D5E99E11B2E460FBF78B49 /* Pods_TwitchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EC0E0186085DF4E6F02183F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF5F5A93CC10364757E85FC8 /* Pods-TwitchUI.debug.xcconfig */,
+				8AE9B28225356983BB64CC43 /* Pods-TwitchUI.release.xcconfig */,
+				CB9928C7B1496C658A89D335 /* Pods-TwitchUI-TwitchUIUITests.debug.xcconfig */,
+				B3A5D00A2E234651AC035979 /* Pods-TwitchUI-TwitchUIUITests.release.xcconfig */,
+				B9409B31FF5600CBA797B1DB /* Pods-TwitchUITests.debug.xcconfig */,
+				52D0842038100EAABECC7889 /* Pods-TwitchUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9DE6112356ACD200A4339F /* Build configuration list for PBXNativeTarget "TwitchUI" */;
 			buildPhases = (
+				B9201D8630780842F7733196 /* [CP] Check Pods Manifest.lock */,
 				3D9DE5E32356ACD100A4339F /* Sources */,
 				3D9DE5E42356ACD100A4339F /* Frameworks */,
 				3D9DE5E52356ACD100A4339F /* Resources */,
+				B199155B002628040F45CEC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9DE6142356ACD200A4339F /* Build configuration list for PBXNativeTarget "TwitchUITests" */;
 			buildPhases = (
+				CAAD53D384557EC503F36D06 /* [CP] Check Pods Manifest.lock */,
 				3D9DE5F92356ACD200A4339F /* Sources */,
 				3D9DE5FA2356ACD200A4339F /* Frameworks */,
 				3D9DE5FB2356ACD200A4339F /* Resources */,
@@ -178,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9DE6172356ACD200A4339F /* Build configuration list for PBXNativeTarget "TwitchUIUITests" */;
 			buildPhases = (
+				6690543180A58A68EBAFEFFC /* [CP] Check Pods Manifest.lock */,
 				3D9DE6042356ACD200A4339F /* Sources */,
 				3D9DE6052356ACD200A4339F /* Frameworks */,
 				3D9DE6062356ACD200A4339F /* Resources */,
+				884509E00745A70D05DAD19E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,14 +392,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6690543180A58A68EBAFEFFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitchUI-TwitchUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		884509E00745A70D05DAD19E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitchUI-TwitchUIUITests/Pods-TwitchUI-TwitchUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitchUI-TwitchUIUITests/Pods-TwitchUI-TwitchUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwitchUI-TwitchUIUITests/Pods-TwitchUI-TwitchUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B199155B002628040F45CEC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitchUI/Pods-TwitchUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitchUI/Pods-TwitchUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwitchUI/Pods-TwitchUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9201D8630780842F7733196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitchUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAAD53D384557EC503F36D06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D9DE5E32356ACD100A4339F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8C2BE0235D411300AA5862 /* Network.swift in Sources */,
 				3D9DE5EB2356ACD100A4339F /* AppDelegate.swift in Sources */,
+				3D8C2BD7235D351D00AA5862 /* TokenStore.swift in Sources */,
+				3D8C2BD9235D38A400AA5862 /* FollowingView.swift in Sources */,
+				3DB99C35235E3A7C0017394D /* API.swift in Sources */,
 				3D9DE5ED2356ACD100A4339F /* SceneDelegate.swift in Sources */,
+				3D72E502235BF65900343B65 /* ContentViewModel.swift in Sources */,
+				3D8C2BDD235D38C800AA5862 /* FollowingViewModel.swift in Sources */,
+				3D8C2BE4235D44F700AA5862 /* URLSession+Network.swift in Sources */,
+				3D8C2BE2235D41F000AA5862 /* NetworkRequest.swift in Sources */,
+				3D68B28E23612A960098B6E9 /* Config.swift in Sources */,
+				3D68B293236139B20098B6E9 /* APIResponse.swift in Sources */,
 				3D9DE5EF2356ACD100A4339F /* ContentView.swift in Sources */,
+				3D68B28B236128C60098B6E9 /* UserRequest.swift in Sources */,
+				3DB99C33235E2F360017394D /* Error.swift in Sources */,
+				3D68B288235FE46A0098B6E9 /* APIRequest.swift in Sources */,
+				3DB99C2E235E262B0017394D /* NetworkResponse.swift in Sources */,
+				3D68B29123612B2C0098B6E9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +680,7 @@
 		};
 		3D9DE6122356ACD200A4339F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5F5A93CC10364757E85FC8 /* Pods-TwitchUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +700,7 @@
 		};
 		3D9DE6132356ACD200A4339F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AE9B28225356983BB64CC43 /* Pods-TwitchUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +720,7 @@
 		};
 		3D9DE6152356ACD200A4339F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9409B31FF5600CBA797B1DB /* Pods-TwitchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +742,7 @@
 		};
 		3D9DE6162356ACD200A4339F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D0842038100EAABECC7889 /* Pods-TwitchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +764,7 @@
 		};
 		3D9DE6182356ACD200A4339F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9928C7B1496C658A89D335 /* Pods-TwitchUI-TwitchUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +784,7 @@
 		};
 		3D9DE6192356ACD200A4339F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A5D00A2E234651AC035979 /* Pods-TwitchUI-TwitchUIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
