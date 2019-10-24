@@ -1,9 +1,26 @@
-//
-//  NetworkRequest.swift
-//  TwitchUI
-//
-//  Created by Shega, Brandon on 10/20/19.
-//  Copyright © 2019 Shega, Brandon. All rights reserved.
-//
-
 import Foundation
+
+struct NetworkRequest {
+    var method: Method
+    var url: URL
+    var headers: [String: LosslessStringConvertible]
+    var body: Data?
+    
+    func buildRequest() throws -> URLRequest {
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
+        
+        for (key, value) in headers {
+            request.addValue(value.description, forHTTPHeaderField: key)
+        }
+        
+        request.httpBody = body
+        return request
+    }
+}
+
+extension NetworkRequest {
+    enum Method: String {
+        case GET, PUT, POST, PATCH, DELETE
+    }
+}
