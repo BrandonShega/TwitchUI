@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  TwitchUI
-//
-//  Created by Shega, Brandon on 10/15/19.
-//  Copyright © 2019 Shega, Brandon. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
