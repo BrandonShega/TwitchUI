@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 enum UserType: String, Codable {
     case staff
@@ -36,5 +37,33 @@ extension User: Codable {
         case profileImageUrl = "profile_image_url"
         case type
         case viewCount = "view_count"
+    }
+}
+
+extension User {
+    static var defaultUser: User {
+        return User(broadcasterType: .none,
+                    description: "",
+                    displayName: "",
+                    id: "",
+                    login: "",
+                    offlineImageUrl: "",
+                    profileImageUrl: "",
+                    type: .none,
+                    viewCount: 0
+        )
+    }
+    
+    static var testUser: User {
+        return User(broadcasterType: .none,
+                    description: "Test Description",
+                    displayName: "Test User",
+                    id: "",
+                    login: "testuser",
+                    offlineImageUrl: "",
+                    profileImageUrl: "",
+                    type: .none,
+                    viewCount: 99
+        )
     }
 }

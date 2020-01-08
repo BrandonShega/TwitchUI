@@ -3,7 +3,11 @@ import AuthenticationServices
 import Keys
 
 class ContentViewModel: NSObject, ObservableObject, Identifiable {
+    @Published var loggedIn = false
+    
     var presentingWindow: UIWindow?
+    var currentUser: User?
+    var api = API(network: URLSession.shared, baseURL: Config.baseUrl)
     
     func login() {
         let keys = TwitchUIKeys()
@@ -23,6 +27,7 @@ class ContentViewModel: NSObject, ObservableObject, Identifiable {
                     let components = NSURLComponents(string: urlString),
                     let token = components.queryItems?.filter({ $0.name == "access_token" }).first?.value {
                     TokenStore.token = token
+                    self.loggedIn = true
                 }
             }
             session.presentationContextProvider = self

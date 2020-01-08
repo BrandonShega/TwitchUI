@@ -7,9 +7,9 @@ struct UserRequest: APIRequest {
     
     func networkRequest(baseURL: URL) throws -> NetworkRequest {
         return NetworkRequest(method: .GET,
-                              url: try url(baseUrl: baseURL),
-                              headers: headers,
-                              body: body
+                              url: baseURL.appendingPathComponent(path),
+                              headers: [:],
+                              body: nil
         )
     }
     

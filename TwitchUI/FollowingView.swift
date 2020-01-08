@@ -1,21 +1,39 @@
-//
-//  FollowingView.swift
-//  TwitchUI
-//
-//  Created by Shega, Brandon on 10/20/19.
-//  Copyright © 2019 Shega, Brandon. All rights reserved.
-//
-
 import SwiftUI
 
 struct FollowingView: View {
+    @ObservedObject var viewModel: FollowingViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                Color(.black)
+                    .edgesIgnoringSafeArea(.all)
+                VStack(alignment: .leading) {
+                    HStack {
+                        Image(uiImage: viewModel.userImage)
+                        .resizable()
+                        .clipShape(Circle())
+                            .frame(width: 35, height: 35)
+                            .padding(.leading, 20)
+                            .padding(.trailing, 20)
+                        Spacer()
+                    }
+                    Text("Following")
+                        .font(.system(size: 40)).bold()
+                        .foregroundColor(.white)
+                    
+                }
+            }
+        }
+        .navigationBarBackButtonHidden(true)
+        .onAppear {
+            self.viewModel.getUser()
+        }
     }
 }
 
 struct FollowingView_Previews: PreviewProvider {
     static var previews: some View {
-        FollowingView()
+        FollowingView(viewModel: .init(currentUser: User.testUser, userImage: UIImage(named: "default") ?? UIImage()))
     }
 }

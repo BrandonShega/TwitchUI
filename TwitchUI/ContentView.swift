@@ -3,7 +3,7 @@ import Keys
 import AuthenticationServices
 
 struct ContentView: View {
-    var viewModel: ContentViewModel
+    @ObservedObject var viewModel: ContentViewModel
     
     var body: some View {
         NavigationView {
@@ -23,6 +23,9 @@ struct ContentView: View {
                                 .foregroundColor(Color.white)
                                 .cornerRadius(8)
                         })
+                    }
+                    NavigationLink(destination: FollowingView(viewModel: .init(currentUser: User.defaultUser)), isActive: $viewModel.loggedIn) {
+                        EmptyView()
                     }
                 }
                 .padding(.all, 40)
